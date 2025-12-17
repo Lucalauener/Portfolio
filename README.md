@@ -5,19 +5,19 @@ Willkommen im Repository meiner persönlichen Portfolio-Website. Als Multimedia 
 
 Dieses Projekt verbindet meine Disziplinen: Fotografie, Video (FOOH), Design und Development.
 
-🎯 Projektziel
+Projektziel
 Die Website dient als minimalistische, aber technisch versierte Visitenkarte. Der Fokus lag auf einer "Distraction-Free" User Experience, die meine visuellen Arbeiten (Editorials, Videos, Grafikdesign) in den Vordergrund rückt, unterstützt durch subtile, interaktive Elemente.
 
-🛠 Tech Stack
+Tech Stack
 Ich habe mich bewusst für einen Vanilla-Ansatz entschieden, um maximale Kontrolle über Performance und Animationen zu haben, ohne den Overhead großer Frameworks.
 
 HTML5: Semantische Strukturierung der Inhalte.
 
-CSS3: Custom Styling, CSS Grid/Flexbox Layouts, Responsive Design.
+CSS: Custom Styling, CSS Grid/Flexbox Layouts, Responsive Design.
 
 JavaScript (ES6): Eigene Logik für Scroll-Interaktionen und Navigation.
 
-🎨 Design & Entwicklungsprozess
+Design & Entwicklungsprozess
 1. Konzept & visuelle Identität
 Das Design basiert auf einem dunklen, erdigen Farbschema (#2e2827), das Eleganz ausstrahlt, ohne vom Inhalt abzulenken.
 
@@ -26,7 +26,7 @@ Typografie: Eine Kombination aus Playfair Display (für Headlines, um den Editor
 Layout: Ein One-Page-Scroll-Ansatz für den schnellen Überblick, ergänzt durch Detailseiten (gallery.html, fooh.html) für tiefere Einblicke.
 
 2. Technische Herausforderungen & Lösungen
-Während der Entwicklung habe ich mich intensiv mit dem Verhalten von Medien im Browser auseinandergesetzt:
+Während der Entwicklung habe ich mich mit dem Verhalten von Medien im Browser auseinandergesetzt:
 
 Responsive Bilddarstellung: Eine große Herausforderung war es, unterschiedliche Formate (Hochglanz-Magazincover vs. Querformat-Fotografie) in einem einheitlichen Grid darzustellen, ohne dass wichtige Bildinhalte abgeschnitten werden.
 
@@ -49,11 +49,7 @@ Video-Integration (FOOH): Für das "Fake Out Of Home"-Projekt war eine Standard-
 ├── /bilder           # Assets (Web-Optimiert)
 ├── /footage          # Galerie-Assets
 └── /Video            # Lokale Videodateien
-🚀 Features
-Custom Parallax Effects: Eigene JS-Berechnungen für flüssige Bewegungen.
 
-Smart Navigation: Die Navigation erkennt automatisch, in welcher Sektion sich der User befindet (Intersection Logic).
+Features
 
-Media Optimization: Spezifische Anpassungen für verschiedene Endgeräte (Mobile vs. Desktop Animationen).
-
-Browser Reset: Logik, die erzwingt, dass die Seite beim Neuladen oben beginnt, um die Animations-Choreografie nicht zu brechen.
+AI wurde in allen Schritten genutzt besonders um Probleme zu lösen.
