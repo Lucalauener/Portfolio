@@ -199,7 +199,10 @@ nav ul li a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
 .item-5 { grid-column: 8 / span 4; margin-top: 80px; }
 
 /* --- SPEZIAL-ANPASSUNG --- */
+/* Item 3 (Heft), Item 4 (FOOH), Item 5 (Schaeppi) */
+/* Diese Bilder sollen NICHT zugeschnitten werden */
 .item-3 .work-img,
+.item-4 .work-img,
 .item-5 .work-img {
     object-fit: contain !important; 
     height: auto !important;
@@ -263,7 +266,7 @@ nav ul li a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
     margin: 0 auto;
 }
 
-/* --- SCROLL ANIMATION (Basis) --- */
+/* --- SCROLL ANIMATION CSS (Basis) --- */
 .animate-block {
     transition: transform 0.1s linear, opacity 0.1s linear;
     opacity: 0; 

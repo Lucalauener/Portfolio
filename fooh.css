@@ -1,0 +1,33 @@
+/* --- Styles speziell für die FOOH Video Seite --- */
+
+.video-content {
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color); /* Sicherheitshalber Hintergrund setzen */
+}
+
+.video-wrapper {
+    width: 100%;
+    max-width: 1000px; /* Begrenzt die Breite auf großen Screens */
+    margin: 0 auto;
+    /* Ein schöner Schatten lässt das Video schweben */
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3); 
+}
+
+.project-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px; /* Leichte Ecken-Abrundung */
+}
+
+.video-description {
+    margin-top: 40px;
+    text-align: center;
+    max-width: 600px;
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
