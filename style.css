@@ -177,7 +177,7 @@ nav ul li a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
     opacity: 0.95;
 }
 
-/* Das Bild im Grid */
+/* Das Bild im Grid (Standard) */
 .work-img { 
     height: 400px; 
     margin-bottom: 10px; 
@@ -187,7 +187,12 @@ nav ul li a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
     display: block;
 }
 
-.caption { font-size: 0.9rem; color: var(--accent-color); }
+.caption { 
+    font-size: 0.9rem; 
+    color: var(--accent-color);
+    text-align: left; /* Stellt sicher, dass Text linksbündig ist */
+    margin-top: 10px; /* Kleiner Abstand zum Bild */
+}
 
 /* Grid Layout Positionen */
 .item-1 { grid-column: 2 / span 5; }
@@ -198,9 +203,8 @@ nav ul li a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
 .item-quote .quote { font-size: 1.8rem; line-height: 1.4; }
 .item-5 { grid-column: 8 / span 4; margin-top: 80px; }
 
-/* --- SPEZIAL-ANPASSUNG --- */
+/* --- SPEZIAL-ANPASSUNG (Links-Bündig Fix) --- */
 /* Item 3 (Heft), Item 4 (FOOH), Item 5 (Schaeppi) */
-/* Diese Bilder sollen NICHT zugeschnitten werden */
 .item-3 .work-img,
 .item-4 .work-img,
 .item-5 .work-img {
@@ -208,6 +212,9 @@ nav ul li a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
     height: auto !important;
     max-height: 500px; 
     background: none;
+    
+    /* WICHTIG: Das Bild wird jetzt LINKS ausgerichtet, statt zentriert */
+    object-position: left center !important; 
 }
 
 /* --- Experience --- */
