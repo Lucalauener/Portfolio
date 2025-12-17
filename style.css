@@ -98,8 +98,8 @@ nav ul li a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
     width: 100%;
     display: flex;
     align-items: center;       
-    justify-content: flex-start; 
-    padding-left: 10%;         
+    justify-content: center; /* WICHTIG: Wieder auf CENTER gestellt */
+    padding-left: 0;         /* WICHTIG: Seitenabstand entfernt */
     box-sizing: border-box;    
     position: relative;
 }
@@ -115,12 +115,12 @@ nav ul li a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
     position: relative;
     z-index: 2;
     color: #ffffff;
-    text-align: left; 
-    max-width: 800px;
+    text-align: center; /* WICHTIG: Text zentriert */
+    max-width: 900px;
 }
 
 .hero-text h1 {
-    text-align: left;
+    text-align: center; /* WICHTIG: H1 zentriert */
     letter-spacing: -0.02em;
     margin-bottom: 15px;
 }
@@ -170,13 +170,14 @@ nav ul li a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
     display: block;
     transition: transform 0.3s ease;
     cursor: pointer;
+    width: 100%;
 }
 .work-link:hover {
     transform: scale(1.02);
     opacity: 0.95;
 }
 
-/* Das Bild im Grid (Perfekter Zuschnitt) */
+/* Das Bild im Grid (Standard: Zugeschnitten) */
 .work-img { 
     height: 400px; 
     margin-bottom: 10px; 
@@ -188,7 +189,7 @@ nav ul li a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
 
 .caption { font-size: 0.9rem; color: var(--accent-color); }
 
-/* Grid Layout */
+/* Grid Layout Positionen */
 .item-1 { grid-column: 2 / span 5; }
 .item-2 { grid-column: 8 / span 5; margin-top: 100px; }
 .item-3 { grid-column: 1 / span 4; margin-top: -50px; }
@@ -196,7 +197,15 @@ nav ul li a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
 .item-quote { grid-column: 2 / span 5; margin-top: 50px; }
 .item-quote .quote { font-size: 1.8rem; line-height: 1.4; }
 .item-5 { grid-column: 8 / span 4; margin-top: 80px; }
-.item-5 .work-img { height: 500px; }
+
+/* --- SPEZIAL-ANPASSUNG: Item 3 (Heft) & Item 5 (Schaeppi) --- */
+.item-3 .work-img,
+.item-5 .work-img {
+    object-fit: contain !important; 
+    height: auto !important;
+    max-height: 500px; 
+    background: none;
+}
 
 /* --- Experience --- */
 .two-column {
@@ -214,7 +223,12 @@ nav ul li a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
     gap: 60px;
     align-items: center;
 }
-.contact-image { height: 600px; width: 100%; object-fit: cover; }
+.contact-image { 
+    height: auto; 
+    width: 100%; 
+    max-height: 600px;
+    object-fit: contain; 
+}
 .contact-info { padding-left: 30px; }
 
 /* --- GALLERY SEITE Styles --- */
@@ -254,7 +268,7 @@ nav ul li a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
     h1 { font-size: 2.5rem; }
     h2 { font-size: 2.2rem; }
     
-    #home { padding-left: 5%; }
+    #home { padding-left: 0; } /* Reset Padding */
     
     .about-grid, .two-column, .contact-grid { 
         grid-template-columns: 1fr; 
