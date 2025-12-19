@@ -1,0 +1,19 @@
+# --- Systemdateien (Mac/Windows Müll) ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Editor Einstellungen (Vscode etc.) ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Logs und Debugging ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Sicherheit & Passwörter ---
+.env
+config.js
